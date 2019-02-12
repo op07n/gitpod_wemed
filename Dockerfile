@@ -4,7 +4,7 @@ USER root
 
 RUN  apt-get update \
   && apt-get install -y matchbox twm \
-  && apt-get install -y libgtk-3-dev libgmime-2.6-dev libwebkit2gtk-4.0-dev \
+  && apt-get install -y libgtk-3-dev libgmime-2.6-dev libwebkit2gtk-4.0-dev gtksourceview-3.0\
   && cd /home/gitpod \
   && git clone https://github.com/ohwgiles/wemed.git  \
   && cd wemed  \
