@@ -1,0 +1,9 @@
+
+image:
+  file: Dockerfile
+ports:
+  - port: 8083
+    onOpen: open-browser
+    protocol: "http"
+tasks:
+- command: "yaourt -S wemed"
