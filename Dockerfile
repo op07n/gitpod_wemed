@@ -2,7 +2,8 @@ FROM gitpod/workspace-full-vnc:latest
 
 USER root
 
-RUN apt-get install -y matchbox twm \
+RUN  apt-get update \
+  && apt-get install -y matchbox twm \
   && cd /home/gitpod \
   && git clone https://github.com/ohwgiles/wemed.git  \
   && cd wemed  \
