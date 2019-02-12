@@ -3,6 +3,5 @@ image:
   file: Dockerfile
 ports:
   - port: 6080
-    onOpen: open-browser
     protocol: "http"
 
